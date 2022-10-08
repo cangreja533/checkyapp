@@ -18,7 +18,6 @@ button {
 		height: auto;
 		margin-right: 1rem;
 	}
-
 	&.btn {
 		width: auto;
 		margin: 1rem auto;
@@ -29,5 +28,8 @@ button {
 		font-weight: 700;
 		font-size: 15px;
 		line-height: 18px;
+	a{
+		color: $color-light;
+	}	
 	}
 }

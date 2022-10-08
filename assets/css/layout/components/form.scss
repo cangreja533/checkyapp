@@ -1,95 +1,17 @@
 input{
-    padding:0px 22px;
-    border-radius: 0px !important;
-    background-color: #ffffff;
-   text-decoration: rgb(18, 18, 18);
-}
+    width: 90%;
+    margin: 0.7rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    background: #F8F8F8;
 
-
-// Ninja Forms
-.wp-block-ninja-forms-form{
-    width: 74%;
-    margin: 0 auto;
-    padding-top: calc(#{$base-margin} * 3);
-    padding-left: 5%;
-    .nf-form-title h3{
-        position: relative;
-        font-family: $font-title;
-        color: $color-title !important;
-        padding: #{$base-margin} 0px;
-        text-decoration:$color-title;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 3em;
-        &::after{
-            content: '';
-            position: absolute;
-            width: 60px;
-            border: 1px solid $color-secundary;
-            top: 50% !important;
-            margin-left: 35px;
-        }
-    }
-    .nf-form-content {
-        label{
-            font-size: 13px;
-            text-decoration: rgb(75, 83, 105);
-            line-height: 24px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font-weight: 900;
-
-        }
-        .ninja-forms-field{
-            padding: 0px 8px;
-            border: 1px solid $color-regular;
-            background-color: $color-light;
-            background-size: cover;
-            font-size: 14px;
-           
-        }
-
-        //inputs
-        input:not([type="button"]){
-            border-radius: 0 !important;
-            
-        }
-        .listselect-wrap .nf-field-element div, 
-        input.ninja-forms-field, 
-        select.ninja-forms-field:not([multiple]){
-            height: 52px;
-            padding: 6px 15px;
-        }
-        .small{
-            .field-wrap{
-                flex-direction: column !important;
-                .nf-field-label, .nf-field-description{
-                    flex: 0 0 100%;
-                }
-                .nf-field-sub-settings{
-                    font-size: 12px;
-                    letter-spacing: 0px;
-                    font-weight: 300;
-                }
-            }
-            
-            label{
-                font-size: 12px;
-                letter-spacing: 0px;
-                text-transform: initial;
-                font-weight: 300;
-                line-height: 1.25em;
-            }
-
-        }
-        .label-right .nf-field-description{
-            margin: 0px !important;
-            font-size: 12px;
-        }
-    }
-    .list-select-wrap > div div::after {
-        height: 52px !important;
-        line-height: 35px !important;
+    &::placeholder{
+        color: $color-grey;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
     }
 
 }
+

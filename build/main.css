@@ -779,7 +779,6 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  color: #5F50E4 !important;
   padding: 10px 0px;
   text-decoration: #5F50E4;
   font-weight: 700;
@@ -1737,6 +1736,39 @@ button.btn {
   border-radius: 10px;
   background-color: #EF972C;
   color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+button.btn a {
+  color: #ffffff;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login--tile {
+  color: #000000 !important;
+}
+.login--text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+input {
+  width: 90%;
+  margin: 0.7rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #F8F8F8;
+}
+input::placeholder {
+  color: #787878;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
