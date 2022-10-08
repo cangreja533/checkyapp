@@ -16,10 +16,10 @@
 body {
 	margin: 0;
 	font-family: $font-body;
-	font-weight: normal;
+	font-weight: $bold;
 	line-height: 1.38em;
-	font-size: 16px;
-	color: $color-regular;
+	font-size: 20px;
+	color: $color-dark;
 	@include fluid-type($min_width_font, $max_width_font, $min_font, $max_font);
 }
 

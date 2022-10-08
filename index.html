@@ -23,172 +23,27 @@
 </head>
 
 <body>
-	<!--Header - Navegation-->
-	<header class="header header__fixed">
 
-		<!-- Top Navigation bar -->
-		<nav class="navbar navbar--top" role="navigation">
-			<ul class="navbar__nav nav justify-content-end ">
-				<li class="nav__item">
-					<a class="nav__link" href="" alt="Inicio" target="_self">Inicio</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="" alt="Inicio" target="_self">Inicio</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="" alt="Calendario" target="_self">Calendario</a>
-				</li>
-				<li id="dropdown-item" class="nav__item">
-					<a id="navbarDropdown" class="nav__link" href="{{ content('contacto') }}" target=""
-						alt="Contacto">Contacto</a>
-				</li>
-				<li id="dropdown-item" class="nav__item dropdown">
-					<span class="arrow">
-						<i class="fas fa-chevron-right"></i>
-					</span>
-					<a id="navbarDropdown" class="nav__link" href="" target="" alt="Es">Es</a>
-					<ul class="navbar__nav nav navbar__submenu">
-						<li class="nav__item">
-							<a class="nav__link" href=""
-								alt="¡Hola, mundo!" target="_self">English</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<i class="fas fa-search search"></i>
-		</nav>
-		<!-- Close - Top Navigation bar -->
-
-		<!-- Navigation bar -->
-		<nav class="navbar navbar--main" role="navigation">
-
-			<!-- Brand  -->
-			<div class="navbar__brand">
-				<a href="" class="custom-logo-link" rel="home" aria-current="page">
-					<img src="assets/img/logo.jpg" class="custom-logo" alt="Sitio de pruebas">
-				</a>
+	<div class="hero">
+		<div class="row justify-content-center">
+			<div class="col-10 text-align-center">
+				<img class="hero--img" src="assets/img/hero.png" alt="news">
+				<h2 class="hero--title">CHECKY</h2>
+				<p class="hero--text">Verified news on Web 3 World </p>
 			</div>
-			<!-- Close  - Brand  -->
-
-			<!-- Nav bar -->
-			<div id="menu" class="navbar__menu navbar--menu-desktop justify-content-end" role="navigation">
-				<ul class="navbar__nav nav">
-					<li class="nav__item">
-						<a class="nav__link" href="{{ content('front-page') }}" alt="Inicio" target="_self">Inicio</a>
-					</li>
-					<li id="dropdown-item" class="nav__item dropdown">
-						<span class="arrow">
-							<i class="fas fa-chevron-right"></i>
-						</span>
-						<a id="navbarDropdown" class="nav__link" href="{{ content('portafolio') }}" target=""
-							alt="Portafolio">Portafolio</a>
-						<ul class="navbar__nav nav navbar__submenu">
-							<li class="nav__item">
-								<a class="nav__link" href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/" alt="Inicio"
-									target="_self">Inicio</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#" alt="enlace hijo" target="_self">enlace hijo</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="" alt="Calendario" target="_self">Calendario</a>
-					</li>
-					<li id="dropdown-item" class="nav__item">
-						<a id="navbarDropdown" class="nav__link" href="{{ content('contacto') }}" target=""
-							alt="Contacto">Contacto</a>
-					</li>
-					<li id="dropdown-item" class="nav__item dropdown">
-						<span class="arrow">
-							<i class="fas fa-chevron-right"></i>
-						</span>
-						<a id="navbarDropdown" class="nav__link" href="" target="" alt="Es">Es</a>
-						<ul class="navbar__nav nav navbar__submenu">
-							<li class="nav__item">
-								<a class="nav__link"
-									href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/index.php/2022/08/17/hola-mundo/"
-									alt="¡Hola, mundo!" target="_self">¡Hola, mundo!</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#" alt="enlace de texto lago muy largo" target="_self">enlace de texto lago
-									muy largo</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- Close - Nav bar -->
-
-		</nav>
-		<!-- Close - Navigation bar -->
-
-		<!-- Mobile - Navigation bar -->
-		<nav
-		class="navbar navbar--mobile">
-			<!-- Brand  -->
-			<div class="navbar__brand">
-				<a href="" class="custom-logo-link" rel="home" aria-current="page">
-					<img src="assets/img/logo.jpg" class="custom-logo" alt="Sitio de pruebas">
-				</a>
-			</div>
-			<!-- Close  - Brand  -->
-		<div id="navbar__toogle" class="navbar__toogle">
-			<button></button>
-			</div>
-		<div id="menu" class="navbar__menu navbar--menu-mobile justify-content-start" role="navigation">
-			<ul class="navbar__nav nav">
-				<li class="nav__item">
-					<a class="nav__link" href="{{ content('front-page') }}" alt="Inicio" target="_self">Inicio</a>
-				</li>
-				<li id="dropdown-item" class="nav__item dropdown">
-					<span class="arrow">
-						<i class="fas fa-chevron-right"></i>
-					</span>
-					<a id="navbarDropdown" class="nav__link" href="{{ content('portafolio') }}" target=""
-						alt="Portafolio">Portafolio</a>
-					<ul class="navbar__nav nav navbar__submenu">
-						<li class="nav__item">
-							<a class="nav__link" href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/" alt="Inicio"
-								target="_self">Inicio</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#" alt="enlace hijo" target="_self">enlace hijo</a>
-						</li>
-					</ul>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="" alt="Calendario" target="_self">Calendario</a>
-				</li>
-				<li id="dropdown-item" class="nav__item">
-					<a id="navbarDropdown" class="nav__link" href="{{ content('contacto') }}" target=""
-						alt="Contacto">Contacto</a>
-				</li>
-				<li id="dropdown-item" class="nav__item dropdown">
-					<span class="arrow">
-						<i class="fas fa-chevron-right"></i>
-					</span>
-					<a id="navbarDropdown" class="nav__link" href="" target="" alt="Es">Es</a>
-					<ul class="navbar__nav nav navbar__submenu">
-						<li class="nav__item">
-							<a class="nav__link"
-								href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/index.php/2022/08/17/hola-mundo/"
-								alt="¡Hola, mundo!" target="_self">¡Hola, mundo!</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#" alt="enlace de texto lago muy largo" target="_self">enlace de texto lago
-								muy largo</a>
-						</li>
-					</ul>
-				</li>
-			</ul>			<i class="fas fa-search search"></i>
 		</div>
-	</nav>
 
-
-	</header>
-	<!--Close Header - Navegation-->
-
+		<div class="hero--login">
+			<div class="row">
+				<div class="col-12">
+					<h2 >Verify news with us & earn </h2>
+					<button><img src="assets/img/WalletConnect.png" alt="">Connect with WalletConnect</button>
+					<button><img src="assets/img/Metamask.png" alt="">Connect with Metamask</button>
+					<p class="text-align-center mt-5">Already have an account?</p>
+					<button class="btn">Login</button>
+					</div>
+			</div>
+	</div>
 </body>
 
 </html>
