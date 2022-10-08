@@ -1,0 +1,33 @@
+.widget {
+	@media #{$large} {
+		margin-bottom: $base-margin;
+	}
+	h1,h2,h3,h4,h5,h6{
+		width: 100%;
+		color: $color-primary !important;
+	}
+	h2{
+		font-size: calc(1.2rem + .9vw);
+	}
+	// Widget de busqueda
+	.wp-block-search__inside-wrapper {
+		padding: 10px 0px;
+		.wp-block-search__input {
+				border-color: $color-secundary;
+		}
+		.wp-block-search__button{
+			margin-left: 0px;
+			border-color: $color-secundary;
+			color: $color-light;
+			background-color: $color-secundary;
+		}
+	}
+
+	// Widget menu
+	.widget_nav_menu {
+		.menu-item {
+			list-style: none;
+			line-height: 1.9rem;
+		}
+	}
+}

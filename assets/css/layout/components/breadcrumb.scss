@@ -1,0 +1,56 @@
+/*
+Orden 
+Display
+Width
+Height
+Margin
+Padding
+Border
+Posicionamiento
+Tipografía
+Decoración
+Variables
+Mixin
+*/
+.breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	border-radius: .0px;
+	border-top: 2px solid $color-primary;
+	border-bottom: 2px solid $color-primary;
+
+	ol{
+		@include container($width, $max-width);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		list-style: none;
+		margin-bottom: 0;
+		padding: $base-margin;
+		background-color: transparent;
+	}
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: inline-block;
+		padding-right: .5rem;
+		padding-left: .5rem;
+		color: $color-primary;
+		content: "/";
+	}
+	@media #{$small-general} { margin: 0 auto;}
+	.breadcrumb-item{
+		a { 
+			color: $color-primary ; 
+			text-decoration: $color-light; 		
+		}
+		.current-menu-item {
+			font-weight: $bold;
+		}
+	}
+
+}

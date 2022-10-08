@@ -1,0 +1,11 @@
+.mrk-gallery {
+  height: 100vh;
+  display: flex;
+  @include background;
+  &__filter{
+   @include filter(rgba(255, 255, 0255, 0.85));
+  }
+  .mrk-slider--galeria{
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+.wp-block-mrktax-ultimasnoticias {
+	.grid {
+		@include grid(20%, 48%, 30px 30px);
+
+		&[data-columns="3"] {
+			@include grid(20%, 30%, 30px 30px);
+		}
+
+		&[data-columns="4"] {
+			@include grid(20%, 1fr, 30px 30px);
+		}
+	}
+	.grid__item {
+		border: 1px solid rgba(88, 88, 87, 0.15);
+		// border-bottom-right-radius: 30px;
+		// border-bottom-left-radius: 30px;
+	}
+	.item__img {
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.item__date {
+		position: absolute;
+		height: 25%;
+		width: 25%;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-bottom-right-radius: 30px;
+		background-color: $color-secundary;
+		span {
+			color: #ffffff;
+			font-size: calc(1rem + 0.1vw);
+			font-weight: 900;
+		}
+	}
+	.item__content{
+
+	}
+	.item__title {
+		background-color: $color-secundary;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		width: 80%;
+		margin: 0 auto !important;
+		padding: 0.6rem 2rem;
+		z-index: 2;
+		position: relative;
+		top: -1.5rem;
+		font-size: calc(1em + 0.001vw);
+		.item__link{
+			color: $color-light !important;
+		}
+	}
+	.item__preview {
+		padding: 1rem;
+		margin-bottom: 10px !important;
+	}
+}

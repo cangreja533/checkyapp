@@ -1,0 +1,89 @@
+/* Tipografia */
+/***********************************/
+// Fuente los títulos y los textos de las entradas principales
+$font-title: 'Alegreya Sans SC', sans-serif;
+
+// Fuente cuerpos de texto en general.
+$font-body:  'quattrocento_sansregular', sans-serif;
+$font-quote: 'Alegreya Sans SC', sans-serif;
+
+$thin: 100;
+$extra-light:200;
+$light:300;
+$regular:400;
+$medium:500;
+$semi-bold:600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+/* Font size */
+$min_width_font: 360px;
+$max_width_font: 1440px;
+$min_font: 12px;
+$max_font: 20px;
+
+
+/*Tipografia*/
+
+p {
+	margin-bottom: calc(#{$base-margin} * 2) !important;
+	// font-size: calc(0.9rem + #{$font-size-base});
+	font-family: $font-body;
+	line-height: 1.1em;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	// font-size: calc(0.9rem + #{$font-size-base});
+	color: $enlace;
+	&:hover {
+		color: $enlace-hover;
+		text-decoration: none;	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-title;
+	color: $color-title !important;
+	padding: #{$base-margin} 0px;
+	text-decoration: $color-title;
+	text-transform: uppercase;
+	font-weight: $black;
+	margin-bottom: calc(#{$base-margin} * 2)  !important;
+	letter-spacing: 2px;
+}
+h1 {
+	font-size: calc(1.375rem + 1.5vw);
+}
+h2 {
+	font-size: calc(1.325rem + .9vw);
+}
+h3 {
+	font-size: calc(1.3rem + .6vw);
+}
+h4 {
+	font-size: calc(1.275rem + .3vw);
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+
+.enlace {
+	cursor: pointer;
+}
+.fas, i{
+	color: $color-primary;
+	&:hover,  &.active{
+		color: $color-secundary;
+	}
+}

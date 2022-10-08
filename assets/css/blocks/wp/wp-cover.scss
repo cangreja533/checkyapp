@@ -1,0 +1,14 @@
+.is-style-border{
+    border: 1px solid $color-secundary;
+    .wp-block-cover__background{
+        margin: 1.5rem 2.5rem;
+        background-color: $color-tertiary;        
+    }
+    .wp-block-cover__inner-container{
+        width: 90% !important; 
+        margin: 0 auto;
+    }
+    p{
+        color: $color-light;
+    }
+}

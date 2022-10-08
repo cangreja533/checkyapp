@@ -1,0 +1,38 @@
+
+/*
+Orden 
+Display
+Width
+Height
+Margin
+Padding
+Border
+Posicionamiento
+Tipografía
+Decoración
+Variables
+Mixin
+*/
+.a2a_kit {
+    
+    @media #{$x-large-only} {
+        margin-bottom: calc(#{$base-margin} * 2) ;
+     }
+    @include d-flex;
+    .a2a_button{
+        .a2a_svg{ 
+            line-height: 33px !important;
+            background-color: $color-light !important;
+            @media #{$x-large-only} {
+                width: 30px !important;
+                height: 30px !important;
+                line-height: 30px !important;
+             }
+        }
+        svg {
+            path{
+                fill: $color-secundary;
+            }
+        }
+    }
+}

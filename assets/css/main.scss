@@ -1,0 +1,67 @@
+// // Fuentes tipográficas
+@import "./base/fonts";
+
+// // Bases
+@import "./vars";
+@import "./base/margin";
+
+
+/* Reglas después de correr el main */
+@import "./base/types.scss";
+@import "./base/responsive"; 
+@import "./base/mixin";
+@import "./base/content";
+@import "./base/align";
+@import "./base/grid";
+
+// Estructuras
+@import "./layout/structure/archive";
+@import "./layout/structure/error";
+@import "./layout/structure/search";
+@import "./layout/structure/single";
+
+// E-commerce
+@import "./layout/structure/woo/archive-woo";
+@import "./layout/structure/woo/tease-woo";
+@import "./layout/structure/woo/single-product";
+
+
+//Elementos comunes plantilla
+@import "./layout/header";
+@import "./layout/menu-principal";
+@import "./layout/footer";
+@import "./layout/widgets";
+@import "./layout/fadesearch";
+@import "./layout/sidebar";
+
+// Componenetes basicos
+@import "./layout/components/banner";
+@import "./layout/components/breadcrumb";
+@import "./layout/components/addtoany";
+@import "./layout/components/form";
+@import "./layout/components/tease";
+@import "./layout/components/pagination";
+@import "./layout/components/social-media";
+@import "./blocks/wp/wp-ninja-form";
+
+@import "./blocks/wp/wp-separator";
+@import "./blocks/wp/wp-quote";
+@import "./blocks/wp/wp-list";
+@import "./blocks/wp/wp-title";
+@import "./blocks/wp/wp-image";
+@import "./blocks/wp/wp-cover";
+@import "./blocks/wp/wp-block-code";
+@import "./blocks/wp/wp-block-table";
+@import "./blocks/wp/wp-button";
+
+//Bloques - wp - Modificaciones
+@import "./blocks/wp/wp-style";
+
+// Bloques Merak
+@import "./blocks/mrk/mrk-slider";
+@import "./blocks/mrk/mrk-acordion";
+@import "./blocks/mrk/mrk-ultimas-entradas";
+@import "./blocks/mrk/mrk-instagram";
+@import "./blocks/mrk/mrk-gallery";
+@import "./blocks/mrk/mrk-services";
+@import "./blocks/mrk/mrk-video";
