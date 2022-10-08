@@ -7,7 +7,7 @@
 	margin: 0 auto;
 	padding: calc(#{$base-margin}*2);
 	position: fixed;
-	z-index: 999;
+	z-index: 1;
 	bottom: 0 !important;
 	left: 0;
 	background-color: $color-primary;

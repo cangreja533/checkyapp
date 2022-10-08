@@ -1,0 +1,21 @@
+.modal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: $color-light;
+    z-index: 3;
+
+    .row {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background: $color-primary ;
+    }
+    &--text{
+        font-weight: $bold;
+        color: $color-light;
+
+    }
+}
