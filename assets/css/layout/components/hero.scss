@@ -1,9 +1,9 @@
 .hero {
   background-color: $color-primary;
 
-  // &--img {
-  //   margin-top: calc(#{$base-margin} * 7);
-  // }
+  &--img {
+    max-width: 70%;
+  }
 
   &--title {
   color: $color-light !important;

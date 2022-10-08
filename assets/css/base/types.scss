@@ -77,9 +77,4 @@ h6 {
 .enlace {
 	cursor: pointer;
 }
-.fas, i{
-	color: $color-primary;
-	&:hover,  &.active{
-		color: $color-secundary;
-	}
-}
+

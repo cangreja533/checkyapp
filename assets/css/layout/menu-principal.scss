@@ -3,128 +3,38 @@
 	display: -ms-flexbox;
 	display: flex;
 	max-width: $max-width;
+	width: $max-width;
 	margin: 0 auto;
 	padding: calc(#{$base-margin}*2);
-	justify-content: space-between;
-	align-items: center;
-	transition: padding $transition-time;
-
-	@media #{$large} {
-		padding: calc(#{$base-margin}*2) 0;
-	}
-
-	/* Logo */
-	&__brand {
-		max-width: 40%;
-		flex: 0 0 40%;
-		// padding: 0 #{$base-margin};
-
-		@media #{$large} {
-			max-width: 20%;
-			flex: 0 0 20%;
-		}
-
-		.custom-logo-link {
-			display: flex;
-			max-width: 100%;
-			margin: 0 auto;
-			-webkit-transition: max-width 0.3s ease-in-out;
-			-moz-transition: max-width 0.3s ease-in-out;
-			transition: max-width 0.3s ease-in-out;
-
-			@media #{$large} {
-				padding: 0 #{$base-margin};
-			}
-
-			img {
-				max-width: 100%;
-				height: auto;
-				transition: height 1s;
-
-				.header__fixed-top & {
-					max-width: 60%;
-				}
-			}
-		}
-	}
+	position: fixed;
+	z-index: 999;
+	bottom: 0 !important;
+	left: 0;
+	background-color: $color-primary;
 
 	&__nav {
 		display: flex;
-		flex-direction: column;
 		width: $width;
 		margin: 0 auto;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
 		list-style: none;
 
-		@media #{$large} {
-			flex-direction: row;
-			width: auto;
-			margin: initial;
+		&::before {
+			content: "";
+			width: 20%;
+			height: 21px;
+			position: absolute;
+			top: -90%;
+			left: calc(50% - 30px);
+			border-radius: 20px 20px 0 0;
+			background: $color-primary;
 		}
 
 		.nav__item {
 			position: relative;
-
-			@media #{$large} {
-				margin-right: 3.2rem;
-				margin-left: 0;
-			}
-
-			&.dropdown {
-				.arrow {
-					display: block;
-					margin: 0 5px;
-					position: absolute;
-					right: 0;
-					top: 0;
-					line-height: 2rem;
-					text-align: right;
-					box-sizing: border-box;
-					cursor: pointer;
-
-					@media #{$large} {
-						right: -2rem;
-					}
-
-					i {
-						font-size: 1rem;
-						color: $color-light;
-						line-height: 1.2em;
-						-webkit-transition: transform 0.3s ease-in-out;
-						-moz-transition: transform 0.3s ease-in-out;
-						transition: transform 0.3s ease-in-out;
-
-						@media #{$large} {
-							-webkit-transform: rotate(90deg);
-							-moz-transform: rotate(90deg);
-							transform: rotate(90deg);
-						}
-					}
-
-					&.active {
-						i {
-							-webkit-transform: rotate(90deg);
-							-moz-transform: rotate(90deg);
-							transform: rotate(90deg);
-						}
-					}
-				}
-
-				&:last-child {
-					.navbar__submenu {
-						right: -2.2rem;
-					}
-				}
-			}
-
-			@media #{$large} {
-				&:hover {
-					.navbar__submenu {
-						opacity: 1;
-						pointer-events: auto;
-						transform: translateY(0);
-					}
-				}
-			}
 		}
 
 		.nav__link {
@@ -135,320 +45,12 @@
 			font-weight: $regular;
 			font-family: $font-title;
 			font-size: 1.4rem;
-			color: $nav-link;
 			text-decoration: none;
-			transition: color 0.6s;
-			transition: font-size $transition-time, color $transition-time, border-bottom 0.3s;
-
-			&:hover,
-			.current-menu-item & {
-				color: $nav-link-hover;
-			}
-
-			@media #{$large} {
-				position: relative;
-
-				/* Animacion borde inferior de los enlaces */
-				&::before {
-					position: absolute;
-					bottom: 0;
-					content: "";
-					display: block;
-					width: 0;
-					height: 1px;
-					background-color: #fff6;
-					transition: all .3s;
-				}
-
-				&:hover,
-				.current-menu-item & {
-					&::before {
-						width: 100%;
-						left: 0;
-					}
-				}
-
-				.header__fixed-top & {
-					font-size: 0.7rem;
-					padding: 0.3em 0;
-				}
+			.fa-duotone {
+				color: $color-light;
 			}
 		}
 	}
 
-	/* Menú */
-	&__menu {
-		display: flex;
-		max-width: 100%;
-		width: $max-width;
-		margin-top: 20px;
-		align-items: baseline;
-		background-color: transparent;
 
-		@media #{$large} {
-			display: flex;
-			width: 80%;
-			margin-top: 0;
-
-		}
-
-		&.navbar--menu-mobile {
-			display: none;
-		}
-	}
-
-	//Submenu
-	&__submenu {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 40px;
-		opacity: 0;
-		pointer-events: none;
-		transform: translateY(20px);
-		transition: all 200ms linear;
-
-		.nav__link {
-			color: $nav-link-submenu;
-			line-height: 1.25em !important;
-			text-decoration: none !important;
-			text-transform: capitalize !important;
-			transition: color 0.6s !important;
-		}
-
-		@media #{$large} {
-			min-width: $width-submenu;
-			padding: $base-margin;
-			border-radius: 7px;
-			box-shadow: 0px 0px 4px 0px #000;
-			background-color: $submenu-background;
-		}
-
-	}
-
-	&--main {
-		display: none;
-
-		@media #{$large} {
-			display: flex;
-			max-width: $width;
-		}
-
-	}
-
-	&--top {
-		display: none;
-		padding: 0 1rem;
-		background-color: $color-primary;
-
-		@media #{$large} {
-			display: flex;
-			-webkit-justify-content: flex-end;
-			-moz-justify-content: flex-end;
-			-ms-justify-content: flex-end;
-			justify-content: flex-end;
-		}
-
-		.nav{
-			
-			@media #{$large} {
-				width: 100%;
-			}
-
-			&__link{
-				margin: 0;
-				padding: 5px 0;
-				font-size: 0.9em;
-				color: $color-light ;
-			}
-		}
-
-		.search {
-			font-size: 0.8em;
-			color: $color-light;
-
-			@media #{$large} {
-				margin: 5px !important;
-			}
-		}
-	}
-
-	// Menu footer
-	&--footer {
-		@media #{$large} {
-			flex-direction: column !important;
-		}
-
-		.nav__item {
-			display: flex;
-			align-items: baseline;
-			margin-bottom: 15px;
-		}
-
-		i {
-			width: 40px;
-			margin-right: $base-margin;
-		}
-
-	}
-
-	/*Estilos menu con logo en el centro*/
-	&--logo-center {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto auto;
-		gap: 0px 0px;
-		grid-template-areas:
-			". brand nav-sec"
-			"menu menu menu";
-
-		.navbar__brand {
-			grid-area: brand;
-			justify-self: center;
-			width: 60%;
-			max-width: 60%;
-
-			.custom-logo-link {
-				justify-content: center;
-			}
-		}
-
-		.navbar__secondary {
-			grid-area: nav-sec;
-			justify-self: end;
-		}
-
-		.navbar__menu {
-			grid-area: menu;
-			justify-self: center;
-			margin-top: $base-margin*2;
-		}
-
-		.navbar__container-brand {
-			display: flex;
-			width: 100%;
-			margin: $base-margin*2 auto $base-margin;
-			justify-content: space-between;
-			align-items: center;
-		}
-	}
-
-	&--mobile {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		gap: 0px 0px;
-		grid-template-areas:
-			"brand button"
-			"menu menu";
-
-		@media #{$large} {
-			display: none;
-		}
-
-		.navbar__brand {
-			grid-area: brand;
-			max-width: 100%;
-		}
-
-		#navbar__toogle {
-			grid-area: button;
-			display: flex;
-			align-items: baseline;
-			cursor: pointer;
-			justify-content: end;
-
-			button {
-				width: 36px;
-				height: 4px;
-				margin: 10px;
-				padding: 0;
-				position: relative;
-				border: none;
-				border-radius: 2px;
-				background: $color-primary;
-				transition: all 0.3s ease;
-				-webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				outline: none;
-
-				&::before,
-				&::after {
-					content: "";
-					width: $navbar__toogle;
-					height: 4px;
-					border-radius: 2px;
-					position: absolute;
-					background: $color-primary;
-					-webkit-transform-origin: 1.5px center;
-					transform-origin: 1.5px center;
-					transition: all 0.3s ease;
-					-webkit-transition: all 0.3s ease;
-					-moz-transition: all 0.3s ease;
-					-o-transition: all 0.3s ease;
-					-ms-transition: all 0.3s ease;
-				}
-
-				&::before {
-					left: 0;
-					top: -8px;
-				}
-
-				&::after {
-					left: 0;
-					bottom: -8px;
-				}
-			}
-
-			&.active {
-				button {
-					background: none !important;
-
-					&::before {
-						top: 0;
-						-webkit-transform: rotate3d(0, 0, 1, -45deg);
-						transform: rotate3d(0, 0, 1, -45deg);
-						-webkit-transform-origin: 50% 50%;
-						transform-origin: 50% 50%;
-					}
-
-					&::after {
-						bottom: 0;
-						-webkit-transform: rotate3d(0, 0, 1, 45deg);
-						transform: rotate3d(0, 0, 1, 45deg);
-						-webkit-transform-origin: 50% 50%;
-						transform-origin: 50% 50%;
-					}
-				}
-			}
-		}
-
-		.navbar__menu {
-			grid-area: menu;
-		}
-	}
-
-	// Menu secundario 
-	&__secondary {
-		.navbar__nav {
-			margin-right: $base-margin;
-			padding: 0;
-		}
-
-		.nav__item {
-			margin-right: 1.2rem;
-		}
-	}
-
-
-	//Buscador
-	.search {
-		display: none;
-
-		@media #{$large} {
-			display: block;
-		}
-	}
 }

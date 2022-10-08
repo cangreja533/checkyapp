@@ -4,6 +4,7 @@
 $color-light: #ffffff;
 $color-dark: #000000;
 $color-grey: #787878;
+$color-light-grey: #D2CDCD;
 $color-primary: #5F50E4; 
 $color-secundary: #BFFD7D;
 $color-tertiary: #EF972C;
@@ -23,7 +24,7 @@ $header-border: $color-dark;
 
 /* Menu normal */
 $header-background: $color-light;
-$nav-link: $color-dark;
+$nav-link: $color-light;
 $nav-link-hover:$color-secundary;
 
 /* Menu Fijo */

@@ -18,15 +18,15 @@ body {
 	font-family: $font-body;
 	font-weight: $bold;
 	line-height: 1.38em;
-	font-size: 20px;
+	font-size: 16px;
 	color: $color-dark;
-	@include fluid-type($min_width_font, $max_width_font, $min_font, $max_font);
 }
 
-section[role="wall"] a,
-footer a {
-	text-decoration: none;
-	transition: background $transition-time, color $transition-time;
+main{
+	&--title{
+    padding: 2rem 1rem;
+
+	}
 }
 
 iframe {
