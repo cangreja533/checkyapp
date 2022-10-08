@@ -2,7 +2,7 @@
 @import "./base/fonts";
 
 // // Bases
-@import "./vars";
+@import "./base/vars";
 @import "./base/margin";
 
 
@@ -42,20 +42,7 @@
 @import "./layout/components/tease";
 @import "./layout/components/pagination";
 @import "./layout/components/social-media";
-@import "./blocks/wp/wp-ninja-form";
 
-@import "./blocks/wp/wp-separator";
-@import "./blocks/wp/wp-quote";
-@import "./blocks/wp/wp-list";
-@import "./blocks/wp/wp-title";
-@import "./blocks/wp/wp-image";
-@import "./blocks/wp/wp-cover";
-@import "./blocks/wp/wp-block-code";
-@import "./blocks/wp/wp-block-table";
-@import "./blocks/wp/wp-button";
-
-//Bloques - wp - Modificaciones
-@import "./blocks/wp/wp-style";
 
 // Bloques Merak
 @import "./blocks/mrk/mrk-slider";

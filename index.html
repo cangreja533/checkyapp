@@ -123,6 +123,69 @@
 		</nav>
 		<!-- Close - Navigation bar -->
 
+		<!-- Mobile - Navigation bar -->
+		<nav
+		class="navbar navbar--mobile">
+			<!-- Brand  -->
+			<div class="navbar__brand">
+				<a href="" class="custom-logo-link" rel="home" aria-current="page">
+					<img src="assets/img/logo.jpg" class="custom-logo" alt="Sitio de pruebas">
+				</a>
+			</div>
+			<!-- Close  - Brand  -->
+		<div id="navbar__toogle" class="navbar__toogle">
+			<button></button>
+			</div>
+		<div id="menu" class="navbar__menu navbar--menu-mobile justify-content-start" role="navigation">
+			<ul class="navbar__nav nav">
+				<li class="nav__item">
+					<a class="nav__link" href="{{ content('front-page') }}" alt="Inicio" target="_self">Inicio</a>
+				</li>
+				<li id="dropdown-item" class="nav__item dropdown">
+					<span class="arrow">
+						<i class="fas fa-chevron-right"></i>
+					</span>
+					<a id="navbarDropdown" class="nav__link" href="{{ content('portafolio') }}" target=""
+						alt="Portafolio">Portafolio</a>
+					<ul class="navbar__nav nav navbar__submenu">
+						<li class="nav__item">
+							<a class="nav__link" href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/" alt="Inicio"
+								target="_self">Inicio</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" alt="enlace hijo" target="_self">enlace hijo</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="" alt="Calendario" target="_self">Calendario</a>
+				</li>
+				<li id="dropdown-item" class="nav__item">
+					<a id="navbarDropdown" class="nav__link" href="{{ content('contacto') }}" target=""
+						alt="Contacto">Contacto</a>
+				</li>
+				<li id="dropdown-item" class="nav__item dropdown">
+					<span class="arrow">
+						<i class="fas fa-chevron-right"></i>
+					</span>
+					<a id="navbarDropdown" class="nav__link" href="" target="" alt="Es">Es</a>
+					<ul class="navbar__nav nav navbar__submenu">
+						<li class="nav__item">
+							<a class="nav__link"
+								href="http://127.0.0.1/wordpress/ambiente-tpl/sitio/index.php/2022/08/17/hola-mundo/"
+								alt="¡Hola, mundo!" target="_self">¡Hola, mundo!</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" alt="enlace de texto lago muy largo" target="_self">enlace de texto lago
+								muy largo</a>
+						</li>
+					</ul>
+				</li>
+			</ul>			<i class="fas fa-search search"></i>
+		</div>
+	</nav>
+
+
 	</header>
 	<!--Close Header - Navegation-->
 
