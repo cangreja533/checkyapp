@@ -1,6 +1,9 @@
 .highlights {
     padding: 1rem;
     clear: both;
+    .article{
+        border: none;
+    }
     &--title {
         padding: 0;
         font-weight: 700;

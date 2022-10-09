@@ -17,7 +17,7 @@ padding: 1rem;
 	border-top: 1px solid  $color-light-grey;
 
 	&__feed {
-		padding: 1rem;
+		padding: 1.5rem 1rem;
 
 		.article--title {
 			text-align: left;
@@ -45,7 +45,9 @@ padding: 1rem;
 		font-size: 15px;
 		line-height: 18px;
 	}
-
+&--img{
+	width: 100%;
+}
 	&--last-vote {
 		font-weight: $bold;
 		font-size: 15px;
