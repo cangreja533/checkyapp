@@ -1,5 +1,10 @@
 import '../styles/globals.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
 import { Web3Modal } from "@web3modal/react";
+
+config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
   const config = {
@@ -22,9 +27,9 @@ function MyApp({ Component, pageProps }) {
   };
   return (
     <div className='bg-lens-100'>
-        <Component {...pageProps} />
-        <Web3Modal config={config} />
-      </div>
+      <Component {...pageProps} />
+      <Web3Modal config={config} />
+    </div>
   )
 }
 

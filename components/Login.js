@@ -72,23 +72,19 @@ export default function Home() {
           <div className="row">
             <div className="col-12">
               <h2>Verify news with us & earn </h2>
-              <button>
-                <img src="img/WalletConnect.png" alt="" />
-                Connect with WalletConnect
-              </button>
-
-              { isConnected ? 'cambiar de pagina' : <div><ConnectButton /></div>}
-              {currentAccount ? 'cambiar de pagina 2' : <button onClick={connectWallet}>
-                <img src="img/Metamask.png" alt="" />
-                Connect with Metamask
-              </button>}
-              
-
-
-              <button>
-                <img src="img/Metamask.png" alt="" />
-                Connect with Metamask
-              </button>
+             
+              { isConnected  || currentAccount? 'cambiar de pagina' : 
+              <div>
+                <ConnectButton />
+                <button onClick={connectWallet}>
+                  <img src="img/Metamask.png" alt="" />
+                  Connect with Metamask
+                </button>
+                <button>
+                  <img src="img/lens.png" alt=""/>
+                  <a href="home-vote.html">Connect with Lens</a>
+                </button>
+              </div>}     
               <p className="text-align-center mt-5">Already have an account?</p>
               <button className="btn">
                 <a href="login.html">Login</a>
