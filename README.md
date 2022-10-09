@@ -9,9 +9,18 @@ Checky dApp is web3 dApp that uses a consensus mechanism to verify if news sourc
 
 First things first. 
 
-#Check our Checky 😉 App
+# Check our Checky 😉 App
 
 1. 👩‍💻 Fork this repo or clone it. 
 2. 👩‍💻 Run npm i to install all our dependencies. 
 3. 👩‍💻 Run npm start or npm run start to execute it. 
 4. 💅 Voilá there you have it, enjoy!
+
+# What we use 
+
+
+# Who we are 
+
+💜 Andrea, Emilia, Analisse, Sandra y Alejandra 💜 We all are Latinas 💃 woohoo!
+
+![photo_5048540276569778836_y](https://user-images.githubusercontent.com/57343427/194757457-d3a898ef-15d3-4b54-8f25-a8dae951adc5.jpg)
