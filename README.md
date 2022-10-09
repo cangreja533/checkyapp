@@ -21,6 +21,8 @@ If you want to see our figma project, take a look here: https://www.figma.com/pr
 # What do we want, and how do we do it. 👊
 
 ##### UMA PROTOCOL 
+![1_fRjfRN56M7xosNJgypdKdg](https://user-images.githubusercontent.com/57343427/194758194-0ca18d41-d71b-45cd-b0d9-e4b9d0638902.png)
+
 We follow along UMA PROTOCOL's documentation. 👉 https://docs.umaproject.org/, they have all of the info on how the oracle works and it's filled out correctly. 
 
 We started as any smartcontract (using Remix IDE) by iniciating it. We did exactly what the documentation told us to while getting started. We follow this example: 👉 https://remix.ethereum.org/#version=soljson-v0.8.16+commit.07a7930e.js&optimize=false&runs=200&gist=fba5d2812d940759f4f7585741b529a4
@@ -35,9 +37,16 @@ We submitted the data to the oracle and give it time (60 seconds) to verify it, 
 We connect to the smart contract, and then we connect to Oracle. So then within the timestamp we have our staking being placed. 
 
 ##### WALLET CONNECT 
+![photo_2021-07-13-16 27 25](https://user-images.githubusercontent.com/57343427/194758530-481f2e82-5fdc-4e03-bf48-fddd7b397f3b.jpeg)
 
-Wallet is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking, we are really interested in having them here due to it's ease to use wallets without downloading any apps. #EasyPeasyLemonSquizy 🍋
+Wallet Connect is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking, we are really interested in having them here due to it's ease to use wallets without downloading any apps. #EasyPeasyLemonSquizy 🍋
 
+##### LENS 
+![descarga (1)](https://user-images.githubusercontent.com/57343427/194758568-f73de9dd-df93-42a2-b60c-15699fa1e12f.png)
+
+By partnership with LENS, we believe we are creating a community based on reliable and credible web3 news. Creating a transparent and honest community. Giving chances to those contributors who support with checking the truth to be spotted on LENS dApp #Communichecky 🤛
+
+##### PUSH NOTIFICATIONS 
 
 # Who we are 
 
