@@ -32,6 +32,11 @@
       color: $color-primary;
     }
   }
+  &--onboarding{
+    min-height: 67vh;
+    display: flex;
+    align-items: center;
+  }
  &--onboarding__nav{
   display: flex;
   margin-bottom: 20px;

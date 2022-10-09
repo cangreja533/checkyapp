@@ -1361,6 +1361,11 @@ div[role=wall] > img, section[role=wall] > img {
   float: right;
   color: #5F50E4;
 }
+.hero--onboarding {
+  min-height: 67vh;
+  display: flex;
+  align-items: center;
+}
 .hero--onboarding__nav {
   display: flex;
   margin-bottom: 20px;
