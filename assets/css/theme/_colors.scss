@@ -9,13 +9,6 @@ $color-primary: #5F50E4;
 $color-secundary: #BFFD7D;
 $color-tertiary: #EF972C;
 
-
-$color-background: #ffffff;
-
-$color-title: $color-primary;
-$color-regular: $color-tertiary;
-
-
 /* MENU */
 
 /* Menu top */
@@ -69,4 +62,7 @@ $banner-background--instagram: transparent;
 
 .orange{
   color: $color-tertiary;
+}
+.dark{
+  color: $color-dark;
 }

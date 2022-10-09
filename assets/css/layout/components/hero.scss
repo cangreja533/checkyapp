@@ -15,7 +15,8 @@
     font-size: 10px;
   }
 
-  .hero--login {
+  &--onboarding,
+  &--login {
     margin-top: 1rem;
     padding: 3rem 1rem;
     background-color: white;
@@ -25,7 +26,30 @@
       color: $color-dark !important;
       margin-bottom: 2rem;
     }
+    i{
+      font-size: 3rem;
+      float: right;
+      color: $color-primary;
+    }
+  }
+ &--onboarding__nav{
+  display: flex;
+  margin-bottom: 20px;
+  li{
+    list-style: none;
+    margin: 7px;
+  }
+  a{
+    display: block;
+    width: 64px;
+    height: 9px;
+    border-radius: 10px;
+    background-color: $color-light-grey;
+    &.active{
+    background-color: $color-primary;
+    }
   }
 
+ }
 
 }

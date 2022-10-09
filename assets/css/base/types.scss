@@ -30,6 +30,7 @@ p {
 	// font-size: calc(0.9rem + #{$font-size-base});
 	font-family: $font-body;
 	line-height: 1.1em;
+	color: $color-dark;
 }
 
 a {
@@ -51,7 +52,6 @@ h6 {
 	
 	font-family: $font-title;
 	padding: #{$base-margin} 0px;
-	text-decoration: $color-title;
 	font-weight: $bold;
 	margin-bottom: $base-margin;
 	
@@ -82,4 +82,7 @@ h6 {
 
 .bold{
 	font-weight: $bold;
+}
+.title{
+	color: $color-dark;
 }

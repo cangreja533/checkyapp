@@ -12,7 +12,9 @@ button {
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 18px;
-
+	a{
+		color: $color-dark;
+	}
 	img {
 		width: 49px;
 		height: auto;
