@@ -77,11 +77,11 @@ export default function Login() {
              
               { isConnected  || currentAccount ? <Home/> : 
               <div>
-                {/* <ConnectButton /> */}
-                <button onClick={() => { activate(WalletConnect)}}>
+                <ConnectButton />
+                {/* <button onClick={() => { activate(WalletConnect)}}>
                   <img src="img/WalletConnect.png" alt="" />
                   Connect with WalletConnect
-                </button>
+                </button> */}
                 <button onClick={connectWallet}>
                   <img src="img/Metamask.png" alt="" />
                   Connect with Metamask
