@@ -3,16 +3,11 @@ pragma solidity ^0.8.14;
 
 import "https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/oracle/interfaces/OptimisticOracleV2Interface.sol";
 
-// *************************************
-// *   Minimum Viable OO Intergration  *
-// *************************************
 
-// This contract shows how to get up and running as quickly as posible with UMA's Optimistic Oracle.
-// We make a simple price request to the OO and return it to the user.
 
 contract OO_GettingStarted {
     
-    // Create an Optimistic oracle instance at the deployed address on Gšrli.
+    // Create an Optimistic oracle instance at the deployed address on GÅ¡rli.
     OptimisticOracleV2Interface oo = OptimisticOracleV2Interface(0xa59830bA5Af9Ca3bC9577d4C423860184f9b4eB7);
     //OptimisticOracleV2Interface oo = OptimisticOracleV2Interface(0xa59830bA5Af9Ca3bC9577d4C423860184f9b4eB7);
 
@@ -43,7 +38,6 @@ contract OO_GettingStarted {
         bondCurrency.transferFrom(msg.sender,address(this),1e6);
         bondCurrency.approve(address(oo),1e18);
         uint256 reward = 0; // Set the reward to 0 (so we dont have to fund it from this contract).
-
 
         
         oo.requestPrice(identifier, requestTime, ancillaryData, bondCurrency, reward);
