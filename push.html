@@ -1,24 +1,45 @@
-export default function Home() {
-    return(
-        <main class="main">
-		<div class="main--title">
-			<a href="push-some-news.html"><h1 class="title">Checky newsfeed</h1></a>
-			<a href="push-time-up.html">			<p>Check our latest news on web3 👀 🔍</p>
-			</a>
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Prototipo</title>
+	<meta name="description" content="" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/a121fe08e1.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/build/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="/build/main.js"></script>
+
+	<!-- Estilos -->
+	<link rel="stylesheet" href="/build/main.css" type="text/css" media="all" />
+</head>
+
+<body>
+	<div class="push">
+		<img src="assets/img/push.png" alt="">
+	</div>
+	<main class="main">
+		<div class="maint--title">
+			<h1 class="title">Checky newsfeed</h1>
+			<p>Check our latest news on web3 👀 🔍</p>
 		</div>
+
 		<section class="highlights">
 			<h2 class="highlights--title">Highlights</h2>
 			<div class="row">
 				<article class="article col-4">
-					<img class="article--img" src="img/item1.png" alt="" />
+					<img class="article--img" src="assets/img/item1.png" alt="">
 					<h3 class="article--title">ETHEREUM</h3>
 				</article>
 				<article class="article col-4">
-					<img class="article--img" src="img/item2.png" alt="" />
+					<img class="article--img" src="assets/img/item2.png" alt="">
 					<h3 class="article--title">DEFI</h3>
 				</article>
 				<article class="article col-4">
-					<img class="article--img" src="img/item3.png" alt="" />
+					<img class="article--img" src="assets/img/item3.png" alt="">
 					<h3 class="article--title">CRYPTO</h3>
 				</article>
 			</div>
@@ -26,7 +47,7 @@ export default function Home() {
 		</section>
 		<section class="feed-article">
 			<article class="article article__feed ">
-				<img class="article--img" src="img/featurearticle.png" alt="" />
+				<img class="article--img" src="assets/img/featurearticle.png" alt="">
 				<h3 class="article--title">ETHEREUM</h3>
 				<span class="article--subtitle">Discounted ‘stETH’ May Affect ‘Merge’</span>
 				<p class="article--excerpt">Enigma treats ‘stETH’ as an Ethereum bond that can offer a 4% annual return to
@@ -37,13 +58,12 @@ export default function Home() {
 						<span class="article--last-vote">1 hr ago - @Emmilili</span>
 						<span class="article--comments">Comments</span>
 					</div>
-					<div class="col-6  text-align-center"> <button class="btn btn--disable"><a href="complete-vote.html">VOTE TRUE</a></button>
-						<a class="article--challenge" href="challenge.html">CHALLENGE</a>
+					<div class="col-6"> <button class="btn"><a href="home-vote.html">VOTE HERE</a></button>
 					</div>
 				</div>
 			</article>
 			<article class="article article__feed ">
-				<img class="article--img" src="img/featurearticle.png" alt="" />
+				<img class="article--img" src="assets/img/featurearticle.png" alt="">
 				<h3 class="article--title">ETHEREUM</h3>
 				<span class="article--subtitle">Discounted ‘stETH’ May Affect ‘Merge’</span>
 				<p class="article--excerpt">Enigma treats ‘stETH’ as an Ethereum bond that can offer a 4% annual return to
@@ -54,12 +74,12 @@ export default function Home() {
 						<span class="article--last-vote">1 hr ago - @Emmilili</span>
 						<span class="article--comments">Comments</span>
 					</div>
-					<div class="col-6"> <button class="btn"><a href="complete-vote.html">VOTE HERE</a></button>
+					<div class="col-6"> <button class="btn"><a href="home-vote.html">VOTE HERE</a></button>
 					</div>
 				</div>
 			</article>
 			<article class="article article__feed ">
-				<img class="article--img" src="img/featurearticle.png" alt="" />
+				<img class="article--img" src="assets/img/featurearticle.png" alt="">
 				<h3 class="article--title">ETHEREUM</h3>
 				<span class="article--subtitle">Discounted ‘stETH’ May Affect ‘Merge’</span>
 				<p class="article--excerpt">Enigma treats ‘stETH’ as an Ethereum bond that can offer a 4% annual return to
@@ -70,11 +90,25 @@ export default function Home() {
 						<span class="article--last-vote">1 hr ago - @Emmilili</span>
 						<span class="article--comments">Comments</span>
 					</div>
-					<div class="col-6"> <button class="btn"><a href="complete-vote.html">VOTE HERE</a></button>
+					<div class="col-6"> <button class="btn"><a href="home-vote.html">VOTE HERE</a></button>
 					</div>
 				</div>
 			</article>
 		</section>
 	</main>
-)
-}
+	<nav class="navbar navbar--mobile" role="navigation">
+		<ul class="navbar__nav nav justify-content-end ">
+			<li class="nav__item">
+				<a class="nav__link" href="home-vote.html" alt="Inicio" target="_self"><i class="fa-duotone fa-house-circle-check"></i></a>
+			</li>
+			<li class="nav__item">
+				<a class="nav__link" href="publish.html" alt="Upload" target="_self"><i class="fa-duotone fa-cloud-arrow-up"></i></a>
+			</li>
+			<li class="nav__item">
+				<a class="nav__link" href="profiel.html" alt="Profile" target="_self"><i class="fa-duotone fa-user"></i></a>
+			</li>
+		</ul>
+	</nav>
+</body>
+
+</html>
