@@ -54,6 +54,6 @@ MetaMask acts as a bridge between dApps and web browsers, facilitating the use a
 
 # Who we are 
 
-💜 Andrea, Emilia, Analisse, Sandra y Alejandra 💜 We all are Latinas 💃 woohoo!
+💜 Andrea, Emilia, Annalisa, Sandra y Alejandra 💜 We all are Latinas 💃 woohoo!
 
 ![photo_5048540276569778836_y](https://user-images.githubusercontent.com/57343427/194757457-d3a898ef-15d3-4b54-8f25-a8dae951adc5.jpg)
