@@ -1450,10 +1450,17 @@ input {
   color: #D2CDCD;
   text-transform: uppercase;
 }
-.feed-article .article {
+
+.article {
   border-top: 1px solid #D2CDCD;
 }
-.feed-article .article--title {
+.article__feed {
+  padding: 1rem;
+}
+.article__feed .article--title {
+  text-align: left;
+}
+.article--title {
   padding: 0;
   text-align: center;
   font-style: normal;
@@ -1462,31 +1469,29 @@ input {
   line-height: 18px;
   color: #D2CDCD;
 }
-.feed-article .article__feed {
-  padding: 1rem;
-}
-.feed-article .article__feed .article--title {
-  text-align: left;
-}
-.feed-article .article--subtitle {
+.article--subtitle {
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
 }
-.feed-article .article--excerpt {
+.article--excerpt {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
 }
-.feed-article .article--last-vote {
+.article--last-vote {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   color: #D2CDCD;
 }
-.feed-article .article--vote {
+.article--vote {
   align-items: center;
+}
+.article--challenge {
+  color: #FF685D;
+  text-decoration: underline;
 }
 
 .modal {
