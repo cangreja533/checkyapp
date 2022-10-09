@@ -11,6 +11,8 @@ First things first.
 
 # Check our Checky 😉 App
 
+If you want to see our figma project, take a look here: https://www.figma.com/proto/wt2xNdjSAOhCiQ8cO8AbBl/APP?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=81%3A57&show-proto-sidebar=1
+
 1. 👩‍💻 Fork this repo or clone it. 
 2. 👩‍💻 Run npm i to install all our dependencies. 
 3. 👩‍💻 Run npm start or npm run start to execute it. 
@@ -30,6 +32,11 @@ Then with some help, we arranged to have a variable (that is for now setted) tha
 <img width="722" alt="Captura de Pantalla 2022-10-09 a la(s) 07 45 43" src="https://user-images.githubusercontent.com/57343427/194757593-0d43374c-aa56-4b57-8a76-6292ebcb4df6.png">
 
 We submitted the data to the oracle and give it time (60 seconds) to verify it, it could be up to us that type of timestamp entry. 
+We connect to the smart contract, and then we connect to Oracle. So then within the timestamp we have our staking being placed. 
+
+##### WALLET CONNECT 
+
+Wallet is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking, we are really interested in having them here due to it's ease to use wallets without downloading any apps. #EasyPeasyLemonSquizy 🍋
 
 
 # Who we are 
