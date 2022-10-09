@@ -2,12 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowRight } from '@fortawesome/pro-duotone-svg-icons'
 import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Welcome() {
   const [currentPage, setCurrentPage] = useState(1);
-/* 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, []); */
+
   return (
     <main className="main">
       <div className="hero">

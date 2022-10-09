@@ -1,11 +1,12 @@
 import { ConnectButton, useAccount } from '@web3modal/react'
 import { useWeb3React } from '@web3-react/core';
 import { useState, useEffect } from 'react'
+import { WalletConnect } from './Wallet';
+import { useRouter } from 'next/router'
 
-export default function Home() {
+export default function Login() {
   const { isConnected } = useAccount()
-
-
+  const router = useRouter()
 
   const [currentAccount, setCurrentAccount] = useState("")
   const { activate } = useWeb3React()
@@ -73,9 +74,13 @@ export default function Home() {
             <div className="col-12">
               <h2>Verify news with us & earn </h2>
              
-              { isConnected  || currentAccount? 'cambiar de pagina' : 
+              { isConnected  || currentAccount ? router.push('/', undefined, { shallow: true }) : 
               <div>
-                <ConnectButton />
+                {/* <ConnectButton /> */}
+                <button onClick={() => { activate(WalletConnect)}}>
+                  <img src="img/WalletConnect.png" alt="" />
+                  Connect with WalletConnect
+                </button>
                 <button onClick={connectWallet}>
                   <img src="img/Metamask.png" alt="" />
                   Connect with Metamask
