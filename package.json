@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@walletconnect/client": "^1.8.0",
+    "@walletconnect/qrcode-modal": "^1.8.0",
+    "@walletconnect/web3-provider": "^1.8.0",
     "@web3-react/core": "^6.1.9",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "@web3-react/walletlink-connector": "^6.2.14",
+    "@web3modal/ethereum": "^2.0.0-alpha.6",
+    "@web3modal/react": "^2.0.0-alpha.6",
     "alchemy-sdk": "^2.1.1",
     "ethers": "^5.7.1",
     "graphql": "^16.6.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "urql": "^3.0.3"
+    "urql": "^3.0.3",
+    "web3": "^1.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",

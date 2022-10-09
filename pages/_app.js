@@ -1,18 +1,30 @@
 import '../styles/globals.css'
-
-import { Web3ReactProvider } from '@web3-react/core';
-
-function getLibrary(provider) {
-  return new Web3Provider(provider);
-}
+import { Web3Modal } from "@web3modal/react";
 
 function MyApp({ Component, pageProps }) {
+  const config = {
+    projectId: "9338b83ff89083cd0ee7da8cea475c23",
+    theme: "dark",
+    accentColor: "default",
+    ethereum: {
+      appName: "web3Modal",
+      chains: [
+        {
+          id: 80001,
+          name: "Polygon Testnet Mumbai",
+          network: "mumbai",
+          rpcUrls: {
+            default : "https://rpc-mumbai.maticvigil.com"
+          },
+        },
+      ],
+    },
+  };
   return (
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <div className='bg-lens-100'>
+    <div className='bg-lens-100'>
         <Component {...pageProps} />
+        <Web3Modal config={config} />
       </div>
-    </Web3ReactProvider>
   )
 }
 
