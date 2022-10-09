@@ -1,69 +1,35 @@
-import { useState, useEffect } from "react";
-import { client, recommendProfiles } from "../api";
-import Link from "next/link";
-
-export default function Profiles() {
-  const [profiles, setProfiles] = useState([]);
-  const CONSTANT_BIO =
-    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
-  useEffect(() => {
-    fetchProfiles();
-  }, []);
-
-  async function fetchProfiles() {
-    try {
-      const res = await client.query(recommendProfiles).toPromise();
-      console.log("res in profiles", res);
-      setProfiles(res.data.recommendedProfiles);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  if (!profiles) return null;
-
-  const profileItemStyle = `
-  p-8
-  bg-white
-  shadow-custom
-  rounded-lg
-  w-10/12
-  ml-8
-  mt-4
-  mb-8
-  `;
-
+export default function Home() {
   return (
-    <div className="flex h-screen">
-    
-      <div className="overflow-scroll w-2/3">
-        <div>
-          {profiles.map((profile, i) => (
-            <Link key={i} href={`/profile/${profile.id}`}>
-              <a>
-                <div className={profileItemStyle}>
-                  {profile.picture ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={
-                        profile.picture?.original?.url || profile.picture.uri
-                      }
-                      alt={profile.handle}
-                      className="h-20 w-20 rounded-full mb-3"
-                    />
-                  ) : (
-                    <div className="h-20 w-20 rounded-full bg-gray-500"></div>
-                  )}
-                  <h4>{profile.handle}</h4>
-                  <p className="text-black text-xs">
-                    {profile.bio ? profile.bio : CONSTANT_BIO}
-                  </p>
-                </div>
-              </a>
-            </Link>
-          ))}
+    <main className="main">
+      <div className="hero">
+        <div className="row justify-content-center">
+          <div className="col-10 text-align-center">
+            <img className="hero--img" src="img/hero.png" alt="news" />
+            <h2 className="hero--title">CHECKY</h2>
+            <p className="hero--text">Verified news on Web 3 World </p>
+          </div>
+        </div>
+
+        <div className="hero--login">
+          <div className="row">
+            <div className="col-12">
+              <h2>Verify news with us & earn </h2>
+              <button>
+                <img src="img/WalletConnect.png" alt="" />
+                Connect with WalletConnect
+              </button>
+              <button>
+                <img src="img/Metamask.png" alt="" />
+                Connect with Metamask
+              </button>
+              <p className="text-align-center mt-5">Already have an account?</p>
+              <button className="btn">
+                <a href="login.html">Login</a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -1,0 +1,63 @@
+.feed-article{
+	margin: 1rem auto;
+
+	&--title {
+		margin-bottom: 0;
+padding: 1rem;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+		color: $color-light-grey;
+		text-transform: uppercase;
+	}
+
+}
+
+.article {
+	border-top: 1px solid  $color-light-grey;
+
+	&__feed {
+		padding: 1rem;
+
+		.article--title {
+			text-align: left;
+		}
+	}
+	&--title{
+		padding: 0;
+		text-align: center;
+		font-style: normal;
+		font-weight: $bold;
+		font-size: 15px;
+		line-height: 18px;
+		color:$color-light-grey;
+	}
+
+	&--subtitle {
+		margin-bottom: 0.5rem;
+		font-weight: $bold;
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	&--excerpt {
+		font-weight: $regular;
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	&--last-vote {
+		font-weight: $bold;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: $color-light-grey;
+	}
+	&--vote{
+		align-items: center;
+	}
+	&--challenge{
+		color: #FF685D;
+		text-decoration: underline;
+	}
+}

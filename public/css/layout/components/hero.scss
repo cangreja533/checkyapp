@@ -1,0 +1,31 @@
+.hero {
+  background-color: $color-primary;
+
+  &--img {
+    max-width: 70%;
+  }
+
+  &--title {
+  color: $color-light !important;
+    font-size: 25px;
+  }
+
+  &--text {
+    color: $color-light;
+    font-size: 10px;
+  }
+
+  .hero--login {
+    margin-top: 1rem;
+    padding: 3rem 1rem;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+
+    h2 {
+      color: $color-dark !important;
+      margin-bottom: 2rem;
+    }
+  }
+
+
+}

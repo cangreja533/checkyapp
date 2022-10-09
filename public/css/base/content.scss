@@ -1,0 +1,51 @@
+/*Zona pixel Perfect*/
+// body.woocommece-shop { background-image: url("../../img/shop.png");
+// 	background-repeat: no-repeat;
+// 	background-position: center -409px;
+// 	background-size: 100%;
+// }
+// body.woocommece-shop > * { background: rgba(255,255,255,0.2);}
+
+// #main_content{
+// }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: $font-body;
+	font-weight: $bold;
+	line-height: 1.38em;
+	font-size: 16px;
+	color: $color-dark;
+}
+
+.main{
+	&--title{
+    padding: 2rem 1rem;
+
+	}
+}
+
+iframe {
+	max-width: 100%;
+}
+.clear {
+	clear: both;
+}
+pre {
+	overflow-x: scroll;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.content{
+	position: relative;
+	z-index: 1;
+	background-color: $color-light;
+}
