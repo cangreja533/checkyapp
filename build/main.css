@@ -1510,9 +1510,6 @@ textarea[type=checkbox] {
 .article {
   border-top: 1px solid #D2CDCD;
 }
-.article .highlights {
-  border: none;
-}
 .article__feed {
   padding: 1rem;
 }
