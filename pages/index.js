@@ -1,99 +1,42 @@
-import { ConnectButton, useAccount } from '@web3modal/react'
-import { useWeb3React } from '@web3-react/core';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  const { isConnected } = useAccount()
-
-
-
-  const [currentAccount, setCurrentAccount] = useState("")
-  const { activate } = useWeb3React()
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    checkIfWalletIsConnected()
-  }, [])
-
-  const checkIfWalletIsConnected = async () => {
-    try {
-      const { ethereum } = window;
-
-      if (!ethereum) {
-        console.log("Make sure you have metamask!");
-        return;
-      } else {
-        console.log("We have the ethereum object", ethereum);
-      }
-
-      const accounts = await ethereum.request({ method: "eth_accounts" });
-
-      if (accounts.length !== 0) {
-        const account = accounts[0];
-        console.log("Found an authorized account:", account);
-        setCurrentAccount(account);
-      } else {
-        console.log("No authorized account found")
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  const connectWallet = async () => {
-    try {
-      const { ethereum } = window;
-
-      if (!ethereum) {
-        alert("Get MetaMask!");
-        return;
-      }
-
-      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-
-      console.log("Connected", accounts[0]);
-      setCurrentAccount(accounts[0]);
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
+    setCurrentPage(1);
+  }, []);
   return (
     <main className="main">
       <div className="hero">
         <div className="row justify-content-center">
           <div className="col-10 text-align-center">
-            <img className="hero--img" src="img/hero.png" alt="news" />
-            <h2 className="hero--title">CHECKY</h2>
-            <p className="hero--text">Verified news on Web 3 World </p>
+            <img className="hero--img" src="img/coin.png" alt="news" />
           </div>
         </div>
-
-        <div className="hero--login">
-          <div className="row">
-            <div className="col-12">
-              <h2>Verify news with us & earn </h2>
-              <button>
-                <img src="img/WalletConnect.png" alt="" />
-                Connect with WalletConnect
-              </button>
-
-              { isConnected ? 'cambiar de pagina' : <div><ConnectButton /></div>}
-              {currentAccount ? 'cambiar de pagina 2' : <button onClick={connectWallet}>
-                <img src="img/Metamask.png" alt="" />
-                Connect with Metamask
-              </button>}
-              
-
-
-              <button>
-                <img src="img/Metamask.png" alt="" />
-                Connect with Metamask
-              </button>
-              <p className="text-align-center mt-5">Already have an account?</p>
-              <button className="btn">
-                <a href="login.html">Login</a>
-              </button>
-            </div>
+      </div>
+      <div className="hero--onboarding">
+        <div className="row">
+          <div className="col-12 text-align-center">
+            <ul className="hero--onboarding__nav">
+              <li>
+                <a className="active" href="index.html"></a>
+              </li>
+              <li>
+                <a href="index-2.html"></a>
+              </li>
+              <li>
+                <a href="index-3.html"></a>
+              </li>
+            </ul>
+            <h2>Publish news, check news and get rewarded!</h2>
+            <p>
+              First come, first served! Want to check if a web3 news is real?
+            </p>
+            <p>Click the button to vote! </p>
+            <a href="index-2.html">
+              <i className="fa-duotone fa-circle-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>

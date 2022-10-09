@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Profiles from '../components/Profiles'
-import Image from 'next/image'
-import { WalletConnect } from '../components/Wallet';
+import { ConnectButton, useAccount } from '@web3modal/react'
 import { useWeb3React } from '@web3-react/core';
+import { useState, useEffect } from 'react'
 
-const Login = () => {
+export default function Home() {
+  const { isConnected } = useAccount()
+
+
+
   const [currentAccount, setCurrentAccount] = useState("")
   const { activate } = useWeb3React()
 
@@ -56,40 +57,46 @@ const Login = () => {
     }
   }
 
-  const ButtonStyle = `
-    bg-lens-300
-    hover:bg-green-600
-    text-white
-    py-3
-    px-5
-    rounded-full
-    shadow-custom
-    mt-40
-    `
-
-  const TitleStyle = `
-    text-bold drop-shadow-xl
-    text-4xl
-    font-sans
-    `
-
   return (
-    <div>
-      {currentAccount ? (
-        <Profiles />
-      ) : (
-        <div className='pt-80 text-center'>
-          <Image src="/gard3n-logo.svg" height={300} width={300} alt="gard3n-logo" />
-          <h1 className={TitleStyle}>gard3n</h1>
-          <button className={ButtonStyle} onClick={() => { activate(WalletConnect)}}>
-            WalletConnect
-          </button>
-          <button className={ButtonStyle} onClick={connectWallet}>Connect Wallet</button>
+    <main className="main">
+      <div className="hero">
+        <div className="row justify-content-center">
+          <div className="col-10 text-align-center">
+            <img className="hero--img" src="img/hero.png" alt="news" />
+            <h2 className="hero--title">CHECKY</h2>
+            <p className="hero--text">Verified news on Web 3 World </p>
+          </div>
         </div>
-      )
-      }
-    </div>
-  )
-};
 
-export default Login
+        <div className="hero--login">
+          <div className="row">
+            <div className="col-12">
+              <h2>Verify news with us & earn </h2>
+              <button>
+                <img src="img/WalletConnect.png" alt="" />
+                Connect with WalletConnect
+              </button>
+
+              { isConnected ? 'cambiar de pagina' : <div><ConnectButton /></div>}
+              {currentAccount ? 'cambiar de pagina 2' : <button onClick={connectWallet}>
+                <img src="img/Metamask.png" alt="" />
+                Connect with Metamask
+              </button>}
+              
+
+
+              <button>
+                <img src="img/Metamask.png" alt="" />
+                Connect with Metamask
+              </button>
+              <p className="text-align-center mt-5">Already have an account?</p>
+              <button className="btn">
+                <a href="login.html">Login</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
