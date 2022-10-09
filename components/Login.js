@@ -3,6 +3,7 @@ import { useWeb3React } from '@web3-react/core';
 import { useState, useEffect } from 'react'
 import { WalletConnect } from './Wallet';
 import { useRouter } from 'next/router'
+import Home from './Home';
 
 export default function Login() {
   const { isConnected } = useAccount()
@@ -74,7 +75,7 @@ export default function Login() {
             <div className="col-12">
               <h2>Verify news with us & earn </h2>
              
-              { isConnected  || currentAccount ? router.push('/', undefined, { shallow: true }) : 
+              { isConnected  || currentAccount ? <Home/> : 
               <div>
                 {/* <ConnectButton /> */}
                 <button onClick={() => { activate(WalletConnect)}}>
@@ -89,11 +90,12 @@ export default function Login() {
                   <img src="img/lens.png" alt=""/>
                   <a href="home-vote.html">Connect with Lens</a>
                 </button>
-              </div>}     
-              <p className="text-align-center mt-5">Already have an account?</p>
+                <p className="text-align-center mt-5">Already have an account?</p>
               <button className="btn">
                 <a href="login.html">Login</a>
               </button>
+              </div>}     
+              
             </div>
           </div>
         </div>
