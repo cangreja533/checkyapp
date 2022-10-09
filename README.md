@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Checky dApp
 
-## Getting Started
+Hello there to our beloved judges, sponsors or any web3 connoisseurs 😛
+We are gladly to introduce to you. CHECKY dApp
 
-First, run the development server:
+<img width="335" alt="Captura de Pantalla 2022-10-09 a la(s) 07 38 23" src="https://user-images.githubusercontent.com/57343427/194757251-50c5a48d-4a7f-429e-957f-f104b174ac6d.png">
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Checky dApp is web3 dApp that uses a consensus mechanism to verify if news sources are legitimate. Users are incentivized through staking and given rewards for sharing and accurately reporting true sources. 🤑🤳
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+First things first. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Check our Checky 😉 App
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+If you want to see our figma project, take a look here: https://www.figma.com/proto/wt2xNdjSAOhCiQ8cO8AbBl/APP?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=81%3A57&show-proto-sidebar=1
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. 👩‍💻 Fork this repo or clone it. 
+2. 👩‍💻 Run npm i to install all our dependencies. 
+3. 👩‍💻 Run npm start or npm run start to execute it. 
+4. 💅 Voilá there you have it, enjoy!
 
-## Learn More
+# What do we want, and how do we do it. 👊
 
-To learn more about Next.js, take a look at the following resources:
+##### UMA PROTOCOL 
+![1_fRjfRN56M7xosNJgypdKdg](https://user-images.githubusercontent.com/57343427/194758194-0ca18d41-d71b-45cd-b0d9-e4b9d0638902.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We follow along UMA PROTOCOL's documentation. 👉 https://docs.umaproject.org/, they have all of the info on how the oracle works and it's filled out correctly. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We started as any smartcontract (using Remix IDE) by iniciating it. We did exactly what the documentation told us to while getting started. We follow this example: 👉 https://remix.ethereum.org/#version=soljson-v0.8.16+commit.07a7930e.js&optimize=false&runs=200&gist=fba5d2812d940759f4f7585741b529a4
 
-## Deploy on Vercel
+<img width="820" alt="Captura de Pantalla 2022-10-09 a la(s) 07 46 14" src="https://user-images.githubusercontent.com/57343427/194757603-ea5cf3aa-6c45-430d-8f83-8f1104b5e569.png">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then with some help, we arranged to have a variable (that is for now setted) that's called ancillry data, please note that this is a simplified form of ancillry data to work as an example.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img width="722" alt="Captura de Pantalla 2022-10-09 a la(s) 07 45 43" src="https://user-images.githubusercontent.com/57343427/194757593-0d43374c-aa56-4b57-8a76-6292ebcb4df6.png">
+
+We submitted the data to the oracle and give it time (60 seconds) to verify it, it could be up to us that type of timestamp entry. 
+We connect to the smart contract, and then we connect to Oracle. So then within the timestamp we have our staking being placed. 
+
+##### WALLET CONNECT 
+![photo_2021-07-13-16 27 25](https://user-images.githubusercontent.com/57343427/194758530-481f2e82-5fdc-4e03-bf48-fddd7b397f3b.jpeg)
+
+Wallet Connect is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking, we are really interested in having them here due to it's ease to use wallets without downloading any apps. #EasyPeasyLemonSquizy 🍋
+
+##### LENS 
+![descarga (1)](https://user-images.githubusercontent.com/57343427/194758568-f73de9dd-df93-42a2-b60c-15699fa1e12f.png)
+
+By partnership with LENS, we believe we are creating a community based on reliable and credible web3 news. Creating a transparent and honest community. Giving chances to those contributors who support with checking the truth to be spotted on LENS dApp #Communichecky 🤛
+
+##### METAMASK 
+![assets_logo_metamask](https://user-images.githubusercontent.com/57343427/194759789-52c2eddf-bf1f-44c7-bbaf-b13de4b28083.jpeg)
+
+MetaMask acts as a bridge between dApps and web browsers, facilitating the use and enjoyment of them, as it is a favorite to everybody, it is favorite for us as well! 🥳
+
+
+# Who we are 
+
+💜 Andrea, Emilia, Analisse, Sandra y Alejandra 💜 We all are Latinas 💃 woohoo!
+
+![photo_5048540276569778836_y](https://user-images.githubusercontent.com/57343427/194757457-d3a898ef-15d3-4b54-8f25-a8dae951adc5.jpg)
