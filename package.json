@@ -1,7 +1,7 @@
 {
 	"name": "merak-prototype",
 	"version": "0.0.1",
-	"description": "Sistema de prototipos Merak",
+	"description": "Sistema de Checkydapps Merak",
 	"main": "./assets/scripts/main.js",
 	"scripts": {
 		"start": "gulp"
