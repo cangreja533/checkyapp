@@ -1362,7 +1362,7 @@ div[role=wall] > img, section[role=wall] > img {
   margin-bottom: 2rem;
   line-height: 1.2;
 }
-.hero--onboarding i, .hero--login i {
+.hero--onboarding .fa-circle-arrow-right, .hero--login .fa-circle-arrow-right {
   font-size: 3rem;
   float: right;
   color: #5F50E4;
