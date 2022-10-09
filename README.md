@@ -46,7 +46,11 @@ Wallet Connect is an open source protocol for connecting decentralised applicati
 
 By partnership with LENS, we believe we are creating a community based on reliable and credible web3 news. Creating a transparent and honest community. Giving chances to those contributors who support with checking the truth to be spotted on LENS dApp #Communichecky 🤛
 
-##### PUSH NOTIFICATIONS 
+##### METAMASK 
+![assets_logo_metamask](https://user-images.githubusercontent.com/57343427/194759789-52c2eddf-bf1f-44c7-bbaf-b13de4b28083.jpeg)
+
+MetaMask acts as a bridge between dApps and web browsers, facilitating the use and enjoyment of them, as it is a favorite to everybody, it is favorite for us as well! 🥳
+
 
 # Who we are 
 
