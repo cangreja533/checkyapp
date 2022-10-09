@@ -48,11 +48,13 @@ h3,
 h4,
 h5,
 h6 {
+	
 	font-family: $font-title;
 	padding: #{$base-margin} 0px;
 	text-decoration: $color-title;
 	font-weight: $bold;
 	margin-bottom: $base-margin;
+	
 }
 h1 {
 	font-size: calc(1.375rem + 1.5vw);

@@ -28,6 +28,10 @@ button {
 		font-weight: 700;
 		font-size: 15px;
 		line-height: 18px;
+		&--disable{
+			background-color: $color-light-grey;
+
+		}
 	a{
 		color: $color-light;
 	}	

@@ -14,6 +14,10 @@
 /* Newsletter */
 /* Components */
 /* Banner Post */
+.orange {
+  color: #EF972C;
+}
+
 /***********************************/
 /*  Contenedores  */
 /* Columnas Flex*/
@@ -834,7 +838,7 @@ body {
   color: #000000;
 }
 
-main--title {
+.main--title {
   padding: 2rem 1rem;
 }
 
@@ -1303,16 +1307,6 @@ div[role=wall] > img, section[role=wall] > img {
   position: relative;
   list-style: none;
 }
-.navbar__nav::before {
-  content: "";
-  width: 20%;
-  height: 21px;
-  position: absolute;
-  top: -90%;
-  left: calc(50% - 30px);
-  border-radius: 20px 20px 0 0;
-  background: #5F50E4;
-}
 .navbar__nav .nav__item {
   position: relative;
 }
@@ -1323,7 +1317,7 @@ div[role=wall] > img, section[role=wall] > img {
   border-bottom: 1px solid transparent;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 .navbar__nav .nav__link .fa-duotone {
@@ -1386,6 +1380,9 @@ button.btn {
   font-size: 15px;
   line-height: 18px;
 }
+button.btn--disable {
+  background-color: #D2CDCD;
+}
 button.btn a {
   color: #ffffff;
 }
@@ -1441,10 +1438,22 @@ input {
   float: right;
 }
 
-.article {
-  padding: 1rem;
+.feed-article {
+  margin: 1rem auto;
 }
-.article--title {
+.feed-article--title {
+  margin-bottom: 0;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #D2CDCD;
+  text-transform: uppercase;
+}
+.feed-article .article {
+  border-top: 1px solid #D2CDCD;
+}
+.feed-article .article--title {
   padding: 0;
   text-align: center;
   font-style: normal;
@@ -1453,31 +1462,30 @@ input {
   line-height: 18px;
   color: #D2CDCD;
 }
-.article__feed {
-  margin: 2rem auto;
-  border-bottom: 1px solid #D2CDCD;
+.feed-article .article__feed {
+  padding: 1rem;
 }
-.article__feed .article--title {
+.feed-article .article__feed .article--title {
   text-align: left;
 }
-.article--subtitle {
+.feed-article .article--subtitle {
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
 }
-.article--excerpt {
+.feed-article .article--excerpt {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
 }
-.article--last-vote {
+.feed-article .article--last-vote {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   color: #D2CDCD;
 }
-.article--vote {
+.feed-article .article--vote {
   align-items: center;
 }
 
@@ -1499,5 +1507,57 @@ input {
 .modal--text {
   font-weight: 700;
   color: #ffffff;
+}
+
+.profile .title {
+  display: inline-block;
+}
+.profile i {
+  font-size: 2rem;
+  float: right;
+}
+
+.acount {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wallet {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wallet span {
+  margin-bottom: 1rem;
+}
+.wallet--text {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+.wallet--img {
+  position: absolute;
+  right: 4%;
+  top: 8%;
+}
+.wallet--coin {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 37px;
+}
+.wallet--info {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.wallet--info img {
+  margin-right: 0.3rem;
 }
 /*# sourceMappingURL=main.css.map */

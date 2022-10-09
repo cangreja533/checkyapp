@@ -21,18 +21,7 @@
 		align-items: center;
 		position: relative;
 		list-style: none;
-
-		&::before {
-			content: "";
-			width: 20%;
-			height: 21px;
-			position: absolute;
-			top: -90%;
-			left: calc(50% - 30px);
-			border-radius: 20px 20px 0 0;
-			background: $color-primary;
-		}
-
+		
 		.nav__item {
 			position: relative;
 		}
@@ -44,7 +33,7 @@
 			border-bottom: 1px solid transparent;
 			font-weight: $regular;
 			font-family: $font-title;
-			font-size: 1.4rem;
+			font-size: 2rem;
 			text-decoration: none;
 			.fa-duotone {
 				color: $color-light;
